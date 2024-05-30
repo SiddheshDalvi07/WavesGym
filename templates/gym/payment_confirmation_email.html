@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+</head>
+<body>
+    <h2>Payment Confirmation</h2>
+    <p>Dear {{ user.first_name }},</p>
+    <p>Your payment of {{ amount }}Rs has been successfully processed. Thank you for your payment!</p>
+    <p>Your package is now activated for the duration of {{ duration }} days.</p>
+    <!-- Add any additional details or instructions here -->
+    <p>Best regards,<br>Your Gym Team</p>
+</body>
+</html>

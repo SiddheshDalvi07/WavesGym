@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package List</title>
+</head>
+<body>
+    <h1>Package List</h1>
+    <ul>
+        {% for package in packages %}
+            <li>
+                <strong>{{ package.name }}</strong> - {{ package.description }} - {{ package.amount }} - {{ package.duration }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'gym/base.html' %}
+{% load static %}
+{% block 'content' %}
+<div class="container-fluid text-center m-5">
+
+
+<h1>Payment Form</h1>
+<form id="paymentForm" action="{% url 'process_payment' %}" method="POST">
+    {% csrf_token %}
+    <script src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="{{ razorpay_key }}"
+            data-amount="{{ amount }}"
+            data-currency="INR"
+            data-name="Your Company Name"
+            data-description="Purchase Description"
+            data-image="{% static 'path/to/your/logo.png' %}"
+            data-prefill.email="{{ user.email }}"
+            data-prefill.contact="{{ user.mobile }}"
+            data-theme.color="#F37254">
+    </script>
+</form>
+</div>
+
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock %}

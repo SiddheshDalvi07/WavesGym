@@ -1,0 +1,119 @@
+{% extends 'gym/base.html' %}
+{% load static %}
+
+
+{% block 'content' %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-12 location d-flex align-items-center">
+            <h2 contenteditable="true">LOCATION<br>
+                <span class="span1 fs-3"></span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row ">
+
+        <div class="e-con-inner col-md-12 d-flex align-items-center justify-content-center m-5">
+            <div class="elementor-element elementor-element-035dec7 e-con-full e-flex e-con e-child m-5" data-id="035dec7"
+                data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                <div class="elementor-element elementor-element-0cc8219 elementor-widget elementor-widget-google_maps"
+                    data-id="0cc8219" data-element_type="widget" data-widget_type="google_maps.default">
+                    <div class="elementor-widget-container">
+                        <style>
+                            /*! elementor - v3.18.0 - 20-12-2023 */
+                            .elementor-widget-google_maps .elementor-widget-container {
+                                overflow: hidden
+                            }
+
+                            .elementor-widget-google_maps .elementor-custom-embed {
+                                line-height: 0
+                            }
+
+                            .elementor-widget-google_maps iframe {
+                                height: 300px
+                            }
+                        </style>
+                        <div class="elementor-custom-embed">
+                            <iframe loading="lazy"
+                                src="https://maps.google.com/maps?q=waves%20gym%20andheri&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near"
+                                title="waves gym andheri" aria-label="waves gym andheri"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-4824738 e-con-full e-flex e-con e-child" data-id="4824738"
+                data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                <div class="elementor-element elementor-element-7c30f6d elementor-widget elementor-widget-heading"
+                    data-id="7c30f6d" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h5 class="elementor-heading-title elementor-size-default css1">Waves Gym</h5>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-6e4aa18 elementor-widget elementor-widget-text-editor"
+                    data-id="6e4aa18" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <style>
+                            /*! elementor - v3.18.0 - 20-12-2023 */
+                            .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                background-color: #69727d;
+                                color: #fff
+                            }
+
+                            .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                color: #69727d;
+                                border: 3px solid;
+                                background-color: transparent
+                            }
+
+                            .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                margin-top: 8px
+                            }
+
+                            .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                width: 1em;
+                                height: 1em
+                            }
+
+                            .elementor-widget-text-editor .elementor-drop-cap {
+                                float: left;
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 50px
+                            }
+
+                            .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                display: inline-block
+                            }
+                        </style>
+                        <p>Located in the heart of Mumbai, Andheri West, Opposite the Infiniti Mall.</p>
+                        <p><strong>Address:</strong>&nbsp;506 Morya Estate, New Link Road, Andheri West, Mumbai, 400053.
+                        </p>
+                        <p><strong>Phone:</strong> +91 22 6678 7970<br><strong>Mobile:</strong> +91 99200 84402</p>
+                        <p><strong>Business Hours:</strong></p>
+                        <p>6 am – 12 am Monday&nbsp;– Saturday<br>6 am – 10 pm Sunday</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+
+{% endblock %}

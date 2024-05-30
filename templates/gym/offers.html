@@ -1,0 +1,86 @@
+{% extends 'gym/base.html' %}
+{% load static %}
+
+
+{% block 'content' %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12 offers d-flex align-items-center">
+
+            <h2 contenteditable="true">OFFERS
+                <br> <span class="span1 fs-1">Our Latest Offers</span></h2>
+
+        </div>
+
+
+        <div class="row my-5 " >
+            <div class="col-md-6 d-flex align-items-center flex-column" >
+
+                <a href="/offers/1-day-free-guest-pass" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4 " style="width: 18rem; height: 19.2rem;">
+                        <img src="{% static 'images/Waves-1-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">1 DAY FREE GUEST PASS</h5>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/offers/accelerate-recovery-with-normatec-air-compression/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; height: 16rem;">
+                        <img src="{% static 'images/Recovery-300x117.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">ACCELERATE RECOVERY WITH NORMATEC
+                                AIR COMPRESSION</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/offers/abcoffee/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; height: 16rem;">
+                        <img src="{% static 'images/Waves-Caffe-3000-×-2000-px-300x200.jpg' %}" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">ABCOFFEE</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 d-flex align-items-center flex-column">
+                <a href="/offers/start-today-at-waves-gym-safesweatspace/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; ">
+                        <img src="{% static 'images/Strong-by-Zumba-1-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">START TODAY AT WAVES GYM –
+                                #SAFESWEATSPACE!</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/offers/rapid-muscle-relief/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; height: 16rem;">
+                        <img src="{% static 'images/Muscle-Pain-Relief-300x117.jpg' %}" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">RAPID MUSCLE RELIEF</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/offers/refer-a-friend/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; height: 16rem;">
+                        <img src="{% static 'images/Refer_A_Friend-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">REFER A FRIEND</h5>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    {% endblock %}

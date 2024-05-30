@@ -1,0 +1,108 @@
+{% extends 'gym/trainerbase.html' %}
+{% load static %}
+{% block content %}
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+		margin-top: 20px;
+	  }
+	  
+	  td, th {
+		border: 1px solid #dddddd;
+		text-align: center;
+		padding: 8px;
+	  }
+	  
+	 
+	.charts {
+		
+		 grid-template-columns: 1fr;
+		/* gap: 30px; */
+		margin-top: 30px;
+		justify-content: space-around;
+		/* align-items: center; */
+		/* justify-items: center; */
+		/* align-content: space-around; */
+	}
+
+</style>
+<main>
+	<div class="main__container">
+	 
+
+
+	  <!-- CHARTS STARTS HERE -->
+	  <div class="charts">
+		<div class="charts__left">
+		  <div class="charts__left__title">
+			<div>
+			  <h1>Your Profile</h1>
+			  
+			</div>
+			<i class="fa fa-user" aria-hidden="true"></i>
+		  </div>
+		  
+        <table style="width:100%">
+            <tr>
+                <td> Photo</td>
+                <td> <img src="{% static trainer.profile_pic.url %}" alt="Profile Pic" height="120px" width="100px" /></td>
+             </tr>
+                <tr>
+                    <td> Full Name</td>
+                    <td> {{trainer.get_name}}</td>
+                 </tr>
+
+                 
+
+                 <tr>
+                    <td> Mobile</td>
+                    <td>{{trainer.mobile}}</td>
+
+                 </tr>
+
+                 <tr>
+                    <td> Age</td>
+                    <td>{{trainer.age}}</td>
+
+                 </tr>
+
+                 <tr>
+                    <td> Experience</td>
+                    <td>{{trainer.experience}}</td>
+
+                 </tr>
+
+                 <tr>
+                    <td> Salary</td>
+                    <td>{{trainer.salary}}</td>
+
+                 </tr>
+
+                 <tr>
+                    <td> Shift</td>
+                    <td>{{trainer.shift}}</td>	
+
+                 </tr>
+
+
+				 
+  </table>
+  
+		</div>
+
+		
+	  </div>
+	  <!-- CHARTS ENDS HERE -->
+
+	  
+
+
+	</div>
+  </main>
+ 
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+{% endblock content %}

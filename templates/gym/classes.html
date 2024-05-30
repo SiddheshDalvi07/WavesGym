@@ -1,0 +1,100 @@
+{% extends 'gym/base.html' %}
+{% load static %}
+
+
+{% block 'content' %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-12 classes d-flex align-items-center">
+
+            <h2 contenteditable="true">CLASSES
+                <br> <span class="span1 fs-1">The best group exercise classes in Mumbai</span></h2>
+
+        </div>
+
+
+        <div class="row my-5 " >
+            <div class="col-md-12 d-flex align-items-center justify-content-center flex-row" >
+
+                <a href="/workout/kickboxing/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4 " style="width: 18rem; height: 19.2rem;">
+                        <img src="{% static 'images/Kickboxing_2-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-start css2 text-warning fs-4">KICKBOXING</h5>
+                            <p class="card-text text-start   fs-6">Whack them Fitness Struggles and Grow Strong!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/workout/indoor-cycling/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4 " style="width: 18rem; height: 19.2rem;">
+                        <img src="{% static 'images/Zumba-1-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-start css2 text-warning fs-4">INDOOR CYCLING</h5>
+                            <p class="card-text text-start   fs-6">Burn 700cal with Mumbai’s best Indoor Cycling Party!</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="/workout/zumba-fitness/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4 " style="width: 18.5rem; height: 19.2rem;">
+                        <img src="{% static 'images/Studio_Cycling-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-start css2 text-warning fs-4">ZUMBA FITNESS</h5>
+                            <p class="card-text text-start fs-6">Where every beat drops calories & lifts spirits in our dance party!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/workout/power-yoga/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4 " style="width: 18rem; height: 19.2rem;">
+                        <img src="{% static 'images/Waves-Gym-New-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-start css2 text-warning fs-4">POWER YOGA</h5>
+                            <p class="card-text text-start   fs-6">The holistic way to deal with stress and fitness!</p>
+                        </div>
+                    </div>
+                </a>
+
+             
+            </div>
+
+            <!-- <div class="col-md-6 d-flex align-items-center flex-column">
+                <a href="/offers/start-today-at-waves-gym-safesweatspace/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; ">
+                        <img src="{% static 'images/Strong-by-Zumba-1-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">START TODAY AT WAVES GYM –
+                                #SAFESWEATSPACE!</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/offers/rapid-muscle-relief/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; height: 16rem;">
+                        <img src="{% static 'images/Muscle-Pain-Relief-300x117.jpg' %}" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">RAPID MUSCLE RELIEF</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/offers/refer-a-friend/" style="text-decoration: none; ">
+                    <div class="card shadow card-hover m-4" style="width: 18rem; height: 16rem;">
+                        <img src="{% static 'images/Refer_A_Friend-300x200.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center css2 text-warning fs-4">REFER A FRIEND</h5>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div> -->
+        </div>
+
+
+    </div>
+
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    {% endblock %}
