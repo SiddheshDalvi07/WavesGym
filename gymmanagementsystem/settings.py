@@ -170,6 +170,7 @@ MESSAGE_TAGS = {
 # Add these settings to your settings.py file
 REMEMBER_ME_SESSION_EXPIRY = 7 * 24 * 60 * 60  # One week in seconds
 REMEMBER_ME_COOKIE_NAME = 'remember_me'
+REMEMBER_ME_COOKIE_EXPIRY = 60 * 60 * 24 * 14
 
 
 
