@@ -80,7 +80,7 @@ To get started with the Waves Gym Management System, follow these steps:
 
 ## Contributing
 
-We welcome contributions to enhance the Waves Gym Management System. To contribute:
+We welcome contributions to enhance the Waves Gym. To contribute:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
