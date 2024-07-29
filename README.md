@@ -99,5 +99,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to all contributors and users for their feedback and support.
 
 ---
-
-Feel free to adjust any details based on your specific setup and requirements!
