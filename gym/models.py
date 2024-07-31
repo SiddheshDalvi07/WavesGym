@@ -11,7 +11,7 @@ class UserProfile(models.Model):
 
 class Trainer(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE)
-    profile_pic= models.ImageField(upload_to='profile_pic/MemberProfilePic/',null=True,blank=True)
+    profile_pic= models.ImageField(upload_to='profile_pic/MemberProfilePic/',null=True,blank=True,default='default_profile_pic.jpg')
     mobile = models.CharField(max_length=20,null=True)
     email = models.EmailField()
     age=models.CharField(max_length=20,null=True)
@@ -41,7 +41,7 @@ class Package(models.Model):
 
 class Member(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    profile_pic = models.ImageField(upload_to='profile_pic/MemberProfilePic/', null=True, blank=True)
+    profile_pic = models.ImageField(upload_to='profile_pic/MemberProfilePic/', null=True, blank=True,default='default_profile_pic.jpg')
     mobile = models.CharField(max_length=20, null=False)
     email = models.EmailField()
     age = models.CharField(max_length=20, null=True)

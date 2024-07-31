@@ -71,7 +71,13 @@
 	{% for t in members %}
                 <tr>
                   <td> {{t.get_name}}</td>
-                  <td> <img src="{% static t.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
+                  <td>
+					{% if t.profile_pic %}
+						<img src="{% static t.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" />
+					{% else %}
+						<img src="{% static 'images/default_profile_pic.jpg' %}" alt="Default Profile Pic" height="40px" width="40px" />
+					{% endif %}
+				</td>
                   <td>{{t.mobile}}</td>
                   
 				  <td>{{t.package}}</td>
