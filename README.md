@@ -93,9 +93,4 @@ We welcome contributions to enhance the Waves Gym. To contribute:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Special thanks to the development team.
-- Thanks to all contributors and users for their feedback and support.
-
 ---
