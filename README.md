@@ -30,7 +30,7 @@ To get started with the Waves Gym Management System, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/SiddheshDalvi07/gymmanagementsystem-master
+   git clone https://github.com/SiddheshDalvi07/WavesGym.git
    ```
 
 2. **Navigate to the project directory:**
