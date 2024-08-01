@@ -35,7 +35,7 @@ To get started with the Waves Gym Management System, follow these steps:
 
 2. **Navigate to the project directory:**
    ```bash
-   cd waves-gym
+   cd wavesgym
    ```
 
 3. **Create and activate a virtual environment:**
